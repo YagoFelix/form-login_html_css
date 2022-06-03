@@ -1,0 +1,127 @@
+/*  bloco de estilo geral */
+
+/* tirando os estilos desnecessários e padronizando */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+}
+
+body{
+    background-image: url('../img/background.jpg');
+    background-size: cover; /* serve para centralizar o máximo o possível a imagem, dar uma centralizada nela */
+    /* background-position-y: -200px; */
+}
+
+textarea:focus, input:focus {
+    outline: none; /*removendo o azul que fica na volta do input*/
+}
+
+a, label {
+    font-size:  .8rem; /* 16 *.8 = x */
+}
+
+a:hover {
+    color: #08558B;
+}
+
+
+/* login */
+#login-container {
+    background-color: #fff;
+    width: 400px;
+    margin-left: auto; /*quando queremos centralizar um elemento de bloco podemos usar o margin-left e o margin-right*/
+    margin-right: auto;
+    padding: 20px 30px; /* 20 para acima e abaixo, e 30 para as laterais*/
+    margin-top: 10vh; /*viewhigth ( altura da tela), proporcional a tela do usuário, vai começar a 10% da tela do usuário */
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* formulário */
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input {
+    display: block; /* vão ficar um abaixo do outro */
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-bottom: 2px solid #08558B;
+}
+
+#forgot-pass {
+    text-align: right;
+    display: block;
+}
+input[type="submit"] { /* Como ele não está em nenhum id, desta forma atingimos o submit */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #09669b;
+    cursor: pointer; /* Vai fazer com que apareça a "mãozinha" no input */
+}
+
+input[type="submit"]:hover {
+    background-color: #1b223c;
+    transition: .5s; /* para deixar a transição de cor com um efeito melhor */
+}
+
+
+
+/* redes sociais */
+
+#social-container, #social-container p {
+    margin-bottom: 20px;
+}
+
+#social-container i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px; /* alinhando texto na vertical, com a line-height igual a altura do elemento */
+    color: #fff;
+    margin:  0 5px;
+    cursor:  pointer;
+    
+}
+
+.fa-facebook {
+    background-color: #3b5998;
+}
+
+.fa-linkedin {
+    background-color: #0077b5;
+}
+
+
+
+
+/* registrar */
+#register-container p {
+    margin-bottom: 10px;
+}
